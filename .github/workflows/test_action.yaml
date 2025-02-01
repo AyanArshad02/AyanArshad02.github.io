@@ -1,0 +1,16 @@
+name: Test Action
+
+on: 
+  push:
+    branches:
+      - main  # This will trigger the workflow when you push to the main branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: 22f3000985@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
